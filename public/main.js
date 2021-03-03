@@ -26,5 +26,7 @@ function load(arrayOfData) {
     const mapd = L.map('mapid').setView([50.673 , 4.6], 13);
 
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {}).addTo(mapd)
+    L.polyline(arrayOfData.map(obj => [obj.lat, obj.long])).addTo(mymap)
+
     L.marker([51.5, -0.09]).addTo(mapd)
 }
