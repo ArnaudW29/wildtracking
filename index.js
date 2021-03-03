@@ -16,7 +16,7 @@ app.post("/input", function(req, res) {
     res.send("yes")
 })
 
-app.get("/input", (req, res) => res.json(data), res.sendfile("./data.json"))
+app.get("/input", (req, res) => res.json(data))
 app.use(express.static('public'))
 
 app.listen(process.env.PORT || 5000,function() {
