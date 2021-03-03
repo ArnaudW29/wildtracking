@@ -11,7 +11,7 @@ function init() {
 function showData(arrayOfData) {
     for (const obj of arrayOfData)
     var mapd = L.map('mapid').setView([50.48, 4.6], 10);
-    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {}).addTo(mapd)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(mapd)
     L.polyline(arrayOfData.map(obj => [obj.lat, obj.long])).addTo(mapd)
   
     var obj = arrayOfData[arrayOfData.length - 1]
