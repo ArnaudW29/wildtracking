@@ -9,7 +9,7 @@ function init() {
 }
 
 function showData(arrayOfData) {
-    var mapd = L.map('mapid').setView([50.48, 4.6], 10);
+    var mapd = L.map('mapid').setView([50.668081, 4.6118324], 15);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(mapd)
   
     var obj = arrayOfData[arrayOfData.length - 1]
