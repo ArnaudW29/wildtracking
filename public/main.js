@@ -13,3 +13,19 @@ function showData(arrayOfData) {
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(mapd)
 }
 
+function addHistorique(){
+	temps= new Date();
+	if (temps.getMinutes()<10){
+		vraiTemps= temps.getDay() +"/"+ temps.getMonth() +" " +  temps.getHours() + ":0" + temps.getMinutes() + "   "  ;// coordonées
+	}
+	else {
+		vraiTemps= temps.getDay() +"/"+ temps.getMonth() +" " +  temps.getHours() + ":" + temps.getMinutes() + "   "  ;// coordonées
+	}
+	document.getElementById("corps").innerHTML += "<tr><td>" + vraiTemps + "</td><td> test </td><td> test </td></tr>" ;
+}
+	
+function addMarker(){
+	addHistorique();
+	popup = L.popup();
+	L.marker([50,4 ]).bindPopup(temps).addTo(mymap).bindPopup(temps.getHours() + ":" + temps.getMinutes());
+}
