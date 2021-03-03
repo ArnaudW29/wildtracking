@@ -1,5 +1,5 @@
 const express = require("express")
-const fast = require("fs")
+const fs = require("fs")
 
 const app = express()
 
@@ -12,7 +12,7 @@ app.post("/api/input", function(req, res) {
     const json = req.body
     console.log(req.body)
     data.concat(json)
-    fast.writeFileSync("./data.json", JSON.stringify(data))
+    fs.writeFileSync("./data.json", JSON.stringify(data))
     res.send("yes")
 })
 
