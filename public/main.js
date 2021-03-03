@@ -24,9 +24,10 @@ function addHistorique(){
 	}
 	document.getElementById("corps").innerHTML += "<tr><td>" + vraiTemps + "</td><td> test </td><td> test </td></tr>" ;
 }
+onmousemove = function(e){console.log("mouse location:", e.clientX, e.clientY)}
 	
 function addMarker(){
 	addHistorique();
 	popup = L.popup();
-	L.marker([50,4 ]).bindPopup(temps).addTo(mapd).bindPopup(temps.getHours() + ":" + temps.getMinutes());
+	L.marker([e.clientX,e.clientY ]).bindPopup(temps).addTo(mapd).bindPopup(temps.getHours() + ":" + temps.getMinutes());
 }
