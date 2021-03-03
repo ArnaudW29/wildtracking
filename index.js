@@ -6,7 +6,7 @@ const app = express()
 app.use(express.json())
 
 let data = JSON.parse(fs.readFileSync("./data.json"))
- console.log(data)
+
 
 app.post("/input", function(req, res) {
     const json = req.body
@@ -16,7 +16,7 @@ app.post("/input", function(req, res) {
     res.send("yes")
 })
 
-app.get("/input", (req, res) => res.json(data))
+app.get("/input", (req, res) => res.json(data), res.sendfile("./data.json"))
 app.use(express.static('public'))
 
 app.listen(process.env.PORT || 5000,function() {
