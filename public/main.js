@@ -7,10 +7,10 @@ function init() {
         .then(res => res.json())
         .then(showData)
 }
-mapd.doubleClickZoom.disable();
 
 function showData(arrayOfData) {
     var mapd = L.map('mapid').setView([50.668081, 4.6118324], 15);
+	mapd.doubleClickZoom.disable();
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(mapd)
 }
 
