@@ -15,7 +15,7 @@ function showData(arrayOfData) {
 }
 
 function addHistorique(){
-	temps= new Date();
+	let temps= new Date();
 	if (temps.getMinutes()<10){
 		vraiTemps= temps.getDay() +"/"+ temps.getMonth() +" " +  temps.getHours() + ":0" + temps.getMinutes() + "   "  ;// coordonées
 	}
