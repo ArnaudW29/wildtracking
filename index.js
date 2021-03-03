@@ -6,7 +6,7 @@ const app = express()
 app.use(express.json())
 
 let data = JSON.parse(fs.readFileSync("./data.json"))
-
+ console.log(data)
 
 app.post("/input", function(req, res) {
     const json = req.body
