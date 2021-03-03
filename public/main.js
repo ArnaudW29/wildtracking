@@ -1,13 +1,29 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", init)
+
 function init() {
     fetch("/api/input")
         .then(res => res.json())
-        .then(load)
-
+        // .then(() => [
+        //     {
+        //         lat: 50.48,
+        //         long: 4.6,
+        //         alt: 50.48
+        //     }, {
+        //         lat: 50.79878,
+        //         long: 4.8,
+        //         alt: 50.48
+        //     }, {
+        //         lat: 50.498,
+        //         long: 4.8098,
+        //         alt: 50.48
+        //     }
+        // ])
+        .then(showData)
 }
-function load(arrayOfData) {
+
+function showData(arrayOfData) {
     const dataHtml = document.querySelector("#data table tbody")
 
     // TODO: make a table of data
@@ -23,10 +39,14 @@ function load(arrayOfData) {
         `
 
     dataHtml.innerHTML += tableHtml
-    const mapd = L.map('mapid').setView([50.673 , 4.6], 13);
 
-	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {}).addTo(mapd);
+    // SHOW MAP
+
+    const mapd = L.map('mapid').setView([50.48, 4.6], 10);
+
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {}).addTo(mapd)
     L.polyline(arrayOfData.map(obj => [obj.lat, obj.long])).addTo(mapd)
 
-    L.marker([51.5, -0.09]).addTo(mapd)
+    const obj = arrayOfData[arrayOfData.length - 1]
+    L.marker([obj.lat, obj.long]).addTo(mapd)
 }
