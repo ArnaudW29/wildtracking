@@ -63,6 +63,7 @@ text-align: center;
 background-color: #ffffff;
 }
 body {
-    background-color: #227d29 
+    background-color: #227d29;
+    opacity: 0.3;
 }
 
