@@ -191,7 +191,12 @@ function testDatas(datas){
 function draw_map() {
     mymap = L.map('map').setView([50.66595108289637, 4.612268456094151], 17);
 
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {}).addTo(mymap)}
+           L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+        maxZoom: 20,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1
+    }).addTo(mymap);
 
 
 
