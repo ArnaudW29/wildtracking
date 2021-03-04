@@ -171,15 +171,17 @@ var date = new Date(temps*1000);
 return date;
 }
 function testDatas(datas){
-	if ("latitude" in datas && "longitude" in datas){
+	if (datas.latitude && datas.longitude){
 		lat= Number(datas.latitude)
 		lng= Number(datas.longitude)
 		time=transform(datas.Time)
 		info= [lat,lng,time]
 		if (lat != 0 && lng !=0){
-			addDatas(info)
-			
-		}	
+			addDatas(info)	
+		}
+        	else {
+            		alert("Coordonnées éronnées")
+        	}	
 	}
 	else {
 		alert("Coordonnées éronnées")
