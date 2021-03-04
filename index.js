@@ -12,7 +12,7 @@ app.post("/api/input", function(req, res) {
     const json = req.body
     console.log(json)
     data.concat(json)
-    fs.writeFileSync("test.js", JSON.stringify(json))
+    fs.writeFileSync("./data.json", JSON.stringify(data))
     res.send("Received")
 })
 
