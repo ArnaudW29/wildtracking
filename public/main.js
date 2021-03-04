@@ -22,7 +22,7 @@ let dataReçu4={
     "DevLrrCnt": "1",
     "Tags": "[\"test\"]",
     "DeviceName": "24B",
-"longitude": "4.61229"
+"longitude": "4.6222"
 }
 let dataReçu5={
     "LrrSNR": "1.0",
@@ -44,7 +44,7 @@ let dataReçu5={
     "DevLrrCnt": "1",
     "Tags": "[\"test\"]",
     "DeviceName": "24B",
-    "longitude": "4.61220"
+    "longitude": "4.61503"
 }
 let dataReçu6={
     "LrrSNR": "0.0",
@@ -66,7 +66,7 @@ let dataReçu6={
     "DevLrrCnt": "1",
     "Tags": "[\"test\"]",
     "DeviceName": "24B",
-    "longitude": "4.61235"
+    "longitude": "4.61406"
 }
 let dataReçu7={
     "LrrSNR": "4.0",
@@ -88,7 +88,7 @@ let dataReçu7={
     "DevLrrCnt": "1",
     "Tags": "[\"test\"]",
     "DeviceName": "24B",
-    "longitude": "4.61250"
+    "longitude": "4.70"
 }
 let dataReçu8={
     "LrrSNR": "9.0",
@@ -110,7 +110,7 @@ let dataReçu8={
     "DevLrrCnt": "3",
     "Tags": "[\"test\"]",
     "DeviceName": "24B",
-    "longitude": "4.6121190"
+    "longitude": "4.6521190"
 }
 let dataReçu9={
     "LrrSNR": "10.0",
