@@ -56,7 +56,7 @@ function addMarker(){
 	addHistorique();
 	popup = L.popup();
 	L.marker([50,4 ]).addTo(mymap).bindPopup(temps.getHours() + ":" + temps.getMinutes());
-}*/
+}*nnn/
 
 
 
