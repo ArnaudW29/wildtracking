@@ -10,8 +10,6 @@ let data = JSON.parse(fs.readFileSync("./data.json"))
 
 app.post("/api/input", function(req, res) {
     const json = req.body
-    res.json(req.body)
-    console.log("resjson " + res.json(req.body))
     console.log(json)
     data.concat(json)
     fs.writeFileSync("./data.json", JSON.stringify(data))
