@@ -13,8 +13,8 @@ app.post("/input", function(req, res) {
     console.log(req.body)
     data.concat(json)
     fs.writeFileSync("./data.json", JSON.stringify(data))
-    console.log("File written successfully\n"); 
     console.log("POST request")
+    console.log(data)
 });
 
 app.get("/input", (req, res) => res.json(data))
