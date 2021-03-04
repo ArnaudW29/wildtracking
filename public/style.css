@@ -10,9 +10,11 @@
 }
 h1 {
     text-align: center;
+    color: green;
 }
 h2 {
     text-align: center;
+    color: green;
 }
 .center {
   display: block;
