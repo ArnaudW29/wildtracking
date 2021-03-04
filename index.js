@@ -14,7 +14,7 @@ app.post("/api/input", function(req, res) {
     console.log("POST request")
 });
 
-app.get("/api/input", (req, res) => res.json(data))
+app.get("/api/input", (req, res))
 app.use(express.static('public'))
 app.listen(process.env.PORT || 5000,function() {
     console.log("server is running");
