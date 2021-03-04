@@ -41,7 +41,7 @@ function testDatas(datas){
 }
 
 function draw_map() {
-    mymap = L.map('mapid').setView([50.66595108289637, 4.612268456094151], 17);
+    mymap = L.map('mapid').setView([50.668081, 4.6118324], 15);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(mymap)
 };
 /*function addHistorique(){
