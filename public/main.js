@@ -163,8 +163,10 @@ let lat;
 let lng;
 let time;
 let info;
-
-
+function data(){
+let json = require('./data.json');
+console.log(json, 'the json obj');
+}
 function transform(temps) {
 temps = temps/1000;
 var date = new Date(temps*1000);
