@@ -183,6 +183,7 @@ function testDatas(datas){
 	}
 	else {
 		alert("Coordonnées éronnées")
+	}
 }
 
 function draw_map() {
