@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", init)
 
 function init() {
-    fetch("/input")
+    fetch("/data.json")
         .then(res => res.json())
         .then(showData)
 }
