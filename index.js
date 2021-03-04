@@ -5,6 +5,7 @@ const app = express()
 
 app.use(express.json())
 
+let data = JSON.parse(fs.readFileSync("./data.json"))
 
 
 app.post("/api/input", function(req, res) {
