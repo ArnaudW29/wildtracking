@@ -6,6 +6,7 @@ const app = express()
 app.use(express.json())
 
 let data = JSON.parse(fs.readFileSync("./data.json"))
+app.use(bodyParser.urlencoded({ extended: false }))
 
 
 app.post("/api/input", function(req, res) {
@@ -13,7 +14,7 @@ app.post("/api/input", function(req, res) {
     console.log(req.body)
     data.concat(json)
     fs.writeFileSync("./data.json", JSON.stringify(data))
-    res.send("All good")
+    res.send(`You sent: ${body}`)
     console.log(data)
 })
 
