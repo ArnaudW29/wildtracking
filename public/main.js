@@ -197,9 +197,6 @@ function draw_map() {
         zoomOffset: -1
     }).addTo(mymap);
 }
-
-
-
 function addDatas(données){
 	popup = L.popup();
 	/*addHistorique();
