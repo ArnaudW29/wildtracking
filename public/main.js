@@ -191,56 +191,9 @@ function testDatas(datas){
 function draw_map() {
     mymap = L.map('map').setView([50.66595108289637, 4.612268456094151], 17);
 
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-        maxZoom: 20,
-        id: 'mapbox/streets-v11',
-        tileSize: 512,
-        zoomOffset: -1
-    }).addTo(mymap);
-}
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {}).addTo(mymap)}
 
 
-function init() {
-    fetch("/api/input")
-        .then(res => res.json())
-        // .then(() => [
-        //     {
-        //         lat: 50.48,
-        //         long: 4.6,
-        //         alt: 50.48
-        //     }, {
-        //         lat: 50.79878,
-        //         long: 4.8,
-        //         alt: 50.48
-        //     }, {
-        //         lat: 50.498,
-        //         long: 4.8098,
-        //         alt: 50.48
-        //     }
-        // ])
-        .then(showData)
-}
-function showData(arrayOfData) {
-    const dataHtml = document.querySelector("#data table tbody")
-
-    // TODO: make a table of data
-    
-    let tableHtml = ""
-    for (const obj of arrayOfData)
-        tableHtml += `
-        <tr>
-            <th>${obj.lat}</th>
-            <th>${obj.long}</th>
-            <th>${obj.alt}</th>
-        </tr>
-        `
-
-    dataHtml.innerHTML += tableHtml
-
-    // SHOW MAP
-    const obj = arrayOfData[arrayOfData.length - 1]
-    L.marker([obj.lat, obj.long]).addTo(mymap)
-}
 
 
 function addDatas(données){
