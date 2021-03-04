@@ -32,9 +32,6 @@ footer {
     margin-top: 10px;
     color: var(--copy);
 }
-body {
-  background: rgba(0, 128, 0, 0.07);
-}
 
 }
 main {
