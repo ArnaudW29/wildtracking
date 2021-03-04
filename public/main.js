@@ -41,11 +41,9 @@ function testDatas(datas){
 }
 
 function draw_map() {
-    mymap = L.map('map').setView([50.66595108289637, 4.612268456094151], 17);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(mapd)
-    }).addTo(mymap);
-}
-
+    mymap = L.map('mapid').setView([50.66595108289637, 4.612268456094151], 17);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(mymap)
+};
 /*function addHistorique(){
 
 	if (temps.getMinutes()<10){
