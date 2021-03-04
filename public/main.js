@@ -4,12 +4,28 @@ let temps;
 let vraiTemps;
 let popup;
 
-
 function transform(temps) {
 temps = temps/1000;
 var date = new Date(temps*1000);
 return date;
 }
+function addDatas(données){
+	popup = L.popup();
+	/*addHistorique();
+	popup = L.popup();
+	L.marker([50,4 ]).addTo(mapid).bindPopup(vraiTemps);*/
+
+	if (données[2].getMinutes()<10){
+	vraiTemps= "<b> " + données[2].getDay() +"/"+ données[2].getMonth() +"</b><br>" +  données[2].getHours() + ":0" + données[2].getMinutes() 
+	}
+	else {
+		vraiTemps= "<b> " + données[2].getDay() +"/"+ données[2].getMonth() +" </b><br>" +  données[2].getHours() + ":" + données[2].getMinutes()  // MODIF ICI
+	}
+	document.getElementById("corps").innerHTML += "<tr><td>" + vraiTemps + "</td><td>"+ données[0] + " </td><td>"+ données[1] + "</td></tr>";
+	L.marker([données[0],données[1]]).addTo(mymap).bindPopup(vraiTemps);
+	console.log(données[0],données[1],données[2])
+}
+
 function testDatas(datas){
 	if ("latitude" in datas && "longitude" in datas){
 		lat= Number(datas.latitude)
@@ -43,19 +59,4 @@ function addMarker(){
 }*/
 
 
-function addDatas(données){
-	popup = L.popup();
-	/*addHistorique();
-	popup = L.popup();
-	L.marker([50,4 ]).addTo(mapid).bindPopup(vraiTemps);*/
 
-	if (données[2].getMinutes()<10){
-	vraiTemps= "<b> " + données[2].getDay() +"/"+ données[2].getMonth() +"</b><br>" +  données[2].getHours() + ":0" + données[2].getMinutes() 
-	}
-	else {
-		vraiTemps= "<b> " + données[2].getDay() +"/"+ données[2].getMonth() +" </b><br>" +  données[2].getHours() + ":" + données[2].getMinutes()  // MODIF ICI
-	}
-	document.getElementById("corps").innerHTML += "<tr><td>" + vraiTemps + "</td><td>"+ données[0] + " </td><td>"+ données[1] + "</td></tr>";
-	L.marker([données[0],données[1]]).addTo(mymap).bindPopup(vraiTemps);
-	console.log(données[0],données[1],données[2])
-}
