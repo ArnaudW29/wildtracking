@@ -22,7 +22,7 @@ let dataReçu4={
     "DevLrrCnt": "1",
     "Tags": "[\"test\"]",
     "DeviceName": "24B",
-"longitude": "4.6222"
+"longitude": "4.5222"
 }
 let dataReçu5={
     "LrrSNR": "1.0",
@@ -44,7 +44,7 @@ let dataReçu5={
     "DevLrrCnt": "1",
     "Tags": "[\"test\"]",
     "DeviceName": "24B",
-    "longitude": "4.61503"
+    "longitude": "4.31503"
 }
 let dataReçu6={
     "LrrSNR": "0.0",
@@ -54,7 +54,7 @@ let dataReçu6={
     "SubBand": "G0",
     "FPort": "1",
     "Channel": "LC2",
-    "latitude": "50.666096",
+    "latitude": "50.166096",
     "FCntUp": "0",
     "Time": "1614854745415",
     "DevEUI": "1C8779C00000024B",
@@ -66,7 +66,7 @@ let dataReçu6={
     "DevLrrCnt": "1",
     "Tags": "[\"test\"]",
     "DeviceName": "24B",
-    "longitude": "4.61406"
+    "longitude": "4.21406"
 }
 let dataReçu7={
     "LrrSNR": "4.0",
@@ -120,7 +120,7 @@ let dataReçu9={
     "SubBand": "G0",
     "FPort": "1",
     "Channel": "LC3",
-    "latitude": "50.666077",
+    "latitude": "50.966077",
     "FCntUp": "0",
     "Time": "1614852944418",
     "DevEUI": "1C8779C00000024B",
@@ -142,7 +142,7 @@ let dataReçu10={
     "SubBand": "G0",
     "FPort": "1",
     "Channel": "LC4",
-    "latitude": "50.666077",
+    "latitude": "51.666077",
     "FCntUp": "2",
     "Time": "1614852838909",
     "DevEUI": "1C8779C00000024B",
