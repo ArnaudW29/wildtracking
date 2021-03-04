@@ -18,10 +18,6 @@ app.post("/input", function(req, res) {
 
 app.get("/input", (req, res) => res.json(data))
 app.use(express.static('public'))
-app.use(function(req, res, next) {
-  res.status(404).send('Sorry cant find that!');
-});
-
 app.listen(process.env.PORT || 5000,function() {
     console.log("server is running");
   });
