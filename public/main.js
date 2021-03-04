@@ -11,9 +11,6 @@ return date;
 }
 function addDatas(données){
 	popup = L.popup();
-	/*addHistorique();
-	popup = L.popup();
-	L.marker([50,4 ]).addTo(mapid).bindPopup(vraiTemps);*/
 
 	if (données[2].getMinutes()<10){
 	vraiTemps= "<b> " + données[2].getDay() +"/"+ données[2].getMonth() +"</b><br>" +  données[2].getHours() + ":0" + données[2].getMinutes() 
@@ -42,21 +39,7 @@ function draw_map() {
    var mymap = L.map('map').setView([50.668081, 4.6118324], 15);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(mymap)
 };
-/*function addHistorique(){
-	if (temps.getMinutes()<10){
-		vraiTemps= temps.getDay() +"/"+ temps.getMonth() +" " +  temps.getHours() + ":0" + temps.getMinutes() + "   "  ;// coordonées
-	}
-	else {
-		vraiTemps= temps.getDay() +"/"+ temps.getMonth() +" " +  temps.getHours() + ":" + temps.getMinutes() + "   "  ;// coordonées
-	}
-	document.getElementById("corps").innerHTML += "<tr><td>" + vraiTemps + "</td><td> test </td><td> test </td></tr>" ;
-}
-	
-function addMarker(){
-	addHistorique();
-	popup = L.popup();
-	L.marker([50,4 ]).addTo(mymap).bindPopup(temps.getHours() + ":" + temps.getMinutes());
-}*nnn/
+
 
 
 
