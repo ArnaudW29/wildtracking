@@ -20,6 +20,8 @@ function testDatas(datas){
 		if (lat != 0 && lng !=0){
 			addDatas(info)
 		}
+	else {
+		alert("Erreur dans les données"}
 	}
 }
 
