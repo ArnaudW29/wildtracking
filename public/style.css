@@ -20,6 +20,9 @@ h2 {
   margin-right: auto;
   width: 50%;
 }
+footer{
+background-image: url('http://www.noelshack.com/2021-09-4-1614865593-istockphoto-610863714-612x612.jpg');
+}
 main {
     color: var(--font);
     width: auto;
