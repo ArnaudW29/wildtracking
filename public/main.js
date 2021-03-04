@@ -177,8 +177,11 @@ function testDatas(datas){
 		info= [lat,lng,time]
 		if (lat != 0 && lng !=0){
 			addDatas(info)
-		}
+			
+		}	
 	}
+	else {
+		alert("Coordonnées éronnées")
 }
 
 function draw_map() {
