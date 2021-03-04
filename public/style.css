@@ -33,14 +33,8 @@ h2 {
 }
 footer {
     position: fixed;
-    left: 0px;
     bottom: 0px;
-    width: 100%;
-    height: 35px;
-    text-align: center;
     font-size: 75%;
-    margin-top: 10px;
-    color: var(--copy);
 }
 
 
