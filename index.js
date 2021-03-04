@@ -14,7 +14,6 @@ app.post("/api/input", function(req, res) {
     data.concat(json)
     fs.writeFileSync("./data.json", JSON.stringify(data))
     res.send("Received")
-    console.log(data)
 })
 
 app.get("/api/input", (req, res) => res.json(data))
