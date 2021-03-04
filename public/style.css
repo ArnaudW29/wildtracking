@@ -21,9 +21,18 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    font-size: 75%;
+    margin-top: 10px;
+    color: var(--copy);
 }
-footer{
-background-image: url('http://www.noelshack.com/2021-09-4-1614865593-istockphoto-610863714-612x612.jpg');
+
 }
 main {
     color: var(--font);
