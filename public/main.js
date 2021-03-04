@@ -197,7 +197,7 @@ function draw_map() {
         tileSize: 512,
         zoomOffset: -1
     }).addTo(mymap);
-
+}
 
 
 
