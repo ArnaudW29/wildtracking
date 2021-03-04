@@ -5,6 +5,10 @@ let dataReçu={"LrrSNR":"0.0","altitude":"119.0","Lrrid":"FF01075F","SpFact":"7"
 let temps;
 let vraiTemps;
 let popup;
+let lat;
+let lng;
+let time;
+let info;
 
 function transform(temps) {
 temps = temps/1000;
