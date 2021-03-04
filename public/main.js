@@ -43,7 +43,7 @@ let dataReçu5={
     "DevLrrCnt": "1",
     "Tags": "[\"test\"]",
     "DeviceName": "24B",
-    "longitude": "4.61229"
+    "longitude": "4.61220"
 }
 let dataReçu6={
     "LrrSNR": "0.0",
@@ -65,7 +65,7 @@ let dataReçu6={
     "DevLrrCnt": "1",
     "Tags": "[\"test\"]",
     "DeviceName": "24B",
-    "longitude": "4.61229"
+    "longitude": "4.61235"
 }
 let dataReçu7={
     "LrrSNR": "4.0",
@@ -87,7 +87,7 @@ let dataReçu7={
     "DevLrrCnt": "1",
     "Tags": "[\"test\"]",
     "DeviceName": "24B",
-    "longitude": "4.61229"
+    "longitude": "4.61250"
 }
 let dataReçu8={
     "LrrSNR": "9.0",
@@ -109,7 +109,7 @@ let dataReçu8={
     "DevLrrCnt": "3",
     "Tags": "[\"test\"]",
     "DeviceName": "24B",
-    "longitude": "4.6121182"
+    "longitude": "4.6121190"
 }
 let dataReçu9={
     "LrrSNR": "10.0",
@@ -153,7 +153,7 @@ let dataReçu10={
     "DevLrrCnt": "6",
     "Tags": "[\"test\"]",
     "DeviceName": "24B",
-    "longitude": "4.6121182"
+    "longitude": "4.6121175"
 }
 let temps;
 let vraiTemps;
