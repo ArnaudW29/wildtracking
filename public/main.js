@@ -22,7 +22,8 @@ let dataReçu4={
     "DevLrrCnt": "1",
     "Tags": "[\"test\"]",
     "DeviceName": "24B",
-"longitude": "4.61229"}
+"longitude": "4.61229"
+}
 let dataReçu5={
     "LrrSNR": "1.0",
     "altitude": "139.0",
