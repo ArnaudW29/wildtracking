@@ -16,7 +16,7 @@ app.post("/api/input", function(req, res) {
     res.send("Received")
 })
 
-app.get('/', (req, res) =>  response.sendFile(`${__dirname}/data.json`));
+app.get("/api/input", (req, res) => res.json(data))
 
 
 app.use(express.static('public'))
